@@ -32,3 +32,13 @@ subP.textContent = 'Me too!';
 newDiv.appendChild(subP);
 
 parentDiv.appendChild(newDiv);
+
+// Event Listeners
+
+let btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+  alert('Hello World - addEventListener method')
+});
+
+let btn2 = document.querySelector('#btn2');
+btn2.onclick = () => alert('Hello World - btn.onclick method');
